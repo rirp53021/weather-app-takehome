@@ -1,0 +1,23 @@
+# Xcode project files (will be regenerated)
+*.xcodeproj/
+*.xcworkspace/
+
+# Build artifacts
+DerivedData/
+build/
+
+# Git
+.git/
+
+# macOS
+.DS_Store
+
+# Documentation
+README.md
+test.txt
+
+# Scripts
+*.sh
+
+# Package manager
+Package.resolved

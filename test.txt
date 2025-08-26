@@ -1,0 +1,52 @@
+iOS/tvOS Take Home Coding
+Challenge
+This document outlines the take home coding challenge designed to evaluate your
+skills in iOS and tvOS development. Please read through the requirements
+carefully and complete the tasks as specified.
+Challenge Objective
+The objective of this challenge is to create a simple application that fetches and
+displays data from a provided API. You will need to demonstrate your
+understanding of:
+
+Swift programming language
+iOS/tvOS SDKs and frameworks
+Networking and data handling
+User interface design and implementation
+Swift package manager
+Requirements
+You will create two swift packages and one swift app
+1.
+Package 1 - API Data Fetching: Your package must fetch data from the
+following hardcoded API endpoint,
+https://api.weather.gov/points/37.2883,
+-121.8434. The API returns data in
+JSON format. Under its properties/forecast field, you will find another
+API endpoint that returns a weather forecast for the San Jose , CA area.
+Just grab today’s temperature from the
+properties/periods[0]/temperature field
+2. Package 2 - a UI widget: Encapsulate the temperature in a reusable widget
+3. Make sure the two packages can be used by both iOS and tvOS
+4. App - an iOS app: Display the UI widget in a iOS app
+Extra consideration:
+1. 2. App UI: How to best arrange the UI widget for both phone and tablet form
+factors
+App UI: How to best arrange the UI widget for both landscape and portrait
+orientations
+Submission
+Submit your completed project as a zip. Include a README file with instructions on
+how to build and run the application.
+Evaluation Criteria
+Your submission will be evaluated based on the following criteria:
+●
+●
+●
+●
+Functionality: Does the application meet all the requirements?
+Code Quality: Is the code clean, well-documented, and maintainable?
+User Interface: Is the UI intuitive and responsive?
+Error Handling: Are errors handled gracefully?
+Timeline
+This challenge is expected to take approximately two hours. Please plan your time
+accordingly.
+Contact
+If you have any questions, please contact wtao@recurly.com.
