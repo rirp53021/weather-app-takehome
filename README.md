@@ -84,7 +84,7 @@ This project uses XcodeGen for project generation, which ensures consistent proj
 
 2. **Generate the Xcode project**:
    ```bash
-   xcodegen generate
+   ./regenerate.sh
    ```
 
 3. **Open the generated project**:
