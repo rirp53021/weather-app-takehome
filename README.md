@@ -69,15 +69,79 @@ take-home-app/
 
 ## Installation & Building
 
-1. **Open the project** in Xcode:
+### **Option 1: Use XcodeGen (Recommended)**
+
+This project uses XcodeGen for project generation, which ensures consistent project structure and avoids common Xcode project issues.
+
+1. **Install XcodeGen** (if not already installed):
+   ```bash
+   # Using Homebrew
+   brew install xcodegen
+   
+   # Or using Mint
+   mint install xcodegen
+   ```
+
+2. **Generate the Xcode project**:
+   ```bash
+   xcodegen generate
+   ```
+
+3. **Open the generated project**:
+   ```bash
+   open WeatherApp.xcodeproj
+   ```
+
+4. **Build and run** the project:
+   - Select the `WeatherApp` target for iOS
+   - Select the `WeatherAppTV` target for tvOS
+   - Choose your desired simulator/device
+   - Press `Cmd + R` to build and run
+
+### **Option 2: Direct Xcode Project**
+
+1. **Open the project** directly in Xcode:
    ```bash
    open WeatherApp.xcodeproj
    ```
 
 2. **Build and run** the project:
-   - Select the `WeatherApp` target
-   - Choose your desired iOS simulator/device
+   - Select the `WeatherApp` target for iOS
+   - Select the `WeatherAppTV` target for tvOS
+   - Choose your desired simulator/device
    - Press `Cmd + R` to build and run
+
+## XcodeGen Configuration
+
+### **Project Structure**
+The project uses `project.yml` to define:
+- **Targets**: iOS (WeatherApp) and tvOS (WeatherAppTV) applications
+- **Sources**: Shared code between platforms
+- **Dependencies**: Swift Package Manager integration
+- **Build Settings**: Platform-specific configurations
+
+### **Regeneration Script**
+Use the included script to regenerate the project:
+```bash
+./regenerate.sh
+```
+
+This script:
+- Removes old project files
+- Generates fresh Xcode project
+- Ensures clean, consistent project structure
+
+### **Configuration Files**
+- **`project.yml`**: Main XcodeGen configuration
+- **`.xcodegenignore`**: Files to exclude from generation
+- **`regenerate.sh`**: Automated regeneration script
+
+### **Benefits of XcodeGen**
+- ✅ **Consistent Structure**: Always generates the same project layout
+- ✅ **No GUID Conflicts**: Eliminates common Xcode project issues
+- ✅ **Easy Maintenance**: Simple YAML configuration
+- ✅ **Team Collaboration**: Same project structure across all developers
+- ✅ **Version Control Friendly**: Only configuration files in git
 
 ## Features
 
